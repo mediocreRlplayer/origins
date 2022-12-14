@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import phoneimg from './img1.png'
 
 export default function Home() {
   return (
@@ -12,60 +14,113 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={styles.hero}>
+          <video className={styles.video} autoPlay loop src="/ORIGINS Cover Video.mp4"></video>
+          <p className={styles.icon}>Origins</p>
+          <div className={styles.movieBottom}>
+            <p >Welcome to the web3 Playground  </p>
+            <p>This sh*t is bananas…for BRANDS & your CUSTOMERS</p>
+            <p>Its like recess all day </p>
+          </div>
         </div>
+        <div className={styles.intro}>
+          <p>Growing a brand is hard, let our creative milkshakes bring the whole world to your yard and help your brand scale, while putting more loot in your pocket. </p>
+          <p>The place where brands can connect with our Playground to create cutting-edge and engaging customer experiences, utilizing the latest in Web3 technology (that we build in-house, not in India)</p>
+        </div>
+        <div className={styles.scale}>
+          <div className={styles.left}>
+            <p className={styles.breakText}>Growth</p>
+            <p className={styles.followText}>Growth hacks are a thing of the past</p>
+            <p>
+              Or are they? If you’re looking to reduce CACs (customer Acquisition Costs) and maximize customer LTV (Lifetime value), then you should consider building out a loyalty program for your Ecommerce brand or store - but with a twist. Digital collectibles are the way to go!
+            </p>
+            <button>Get Started</button>
+          </div>
+          <div className={styles.right}>
+            <Image height={600} width={450} src={phoneimg}></Image>
+          </div>
+        </div>
+        <div className={styles.scale}>
+          <div className={styles.left}>
+            <Image height={600} width={450} src={phoneimg}></Image>
+          </div>
+          <div className={styles.right}>
+            <p className={styles.breakText}>Earn</p>
+            <p className={styles.followText}>Why not start now? </p>
+            <p>
+              Lets say you launch your digital collectible (or VIP loyalty pass) to 10,000 loyal customers and sell each pass at $100. If you don't have a calculator handy: 10,000 passes x $100 each =  $1,000,000 revenue.
+            </p>
+            <ul className={styles.earnList}>
+              <li>Members can get discounts on products, early access to product drops, and exclusive access to events or content. The only limit is your creativity..</li>
+              <li>Sell them on your site to raise capital, and collect a percentage of secondary sales, introducing an all new income stream for your brand. </li>
+              <li>Capture revenue from secondary product marketplaces, as your products change hands between customers.</li>
+            </ul>
+            <button>Get Started</button>
+          </div>
+        </div>
+        <div className={styles.scale}>
+          <div className={styles.left}>
+            <p className={styles.breakText}>Raise</p>
+            <p className={styles.followText}>Raise capital for your company. Web3 Style</p>
+            <p>
+              Our Outreach service connects our clients with our strategic partner ecosystem to create a targeted prospect list of investors, prospects, and business development opportunities. We build a targeted list based on our client's specific criteria. We then write a customized script to maximize engagement with potential prospects. It's like digging for gold, just for you. Grab a shovel and saddle up partner.
+            </p>
+            <button>Get Started</button>
+          </div>
+          <div className={styles.right}>
+            <Image height={600} width={450} src={phoneimg}></Image>
+          </div>
+        </div>
+        <div className={styles.scale}>
+          <div className={styles.left}>
+            <Image height={600} width={450} src={phoneimg}></Image>
+          </div>
+          <div className={styles.right}>
+            {/* <p className={styles.breakText}>Growth</p> */}
+            <p className={styles.followText}><strong>IF that wasn't enough already..we also CRUSH:</strong> </p>
+            <ol>
+              <li><CheckBoxIcon />User Engagement</li>
+              <li><CheckBoxIcon />Targeting/Insights</li>
+              <li><CheckBoxIcon />Digital Transformations</li>
+              <li><CheckBoxIcon />Performance Optimization</li>
+              <li><CheckBoxIcon />Data Analysis (A/B Testing)</li>
+              <li><CheckBoxIcon />Market Research</li>
+              <li><CheckBoxIcon />Strategic Planning </li>
+              <li><CheckBoxIcon />Positioning</li>
+              <li><CheckBoxIcon />Brand Awareness</li>
+              <li><CheckBoxIcon />Conversion optimization </li>
+              <li><CheckBoxIcon />Content Marketing</li>
+              <li><CheckBoxIcon />Social Media Marketing</li>
+              <li><CheckBoxIcon />Lead Generation</li>
+              <li><CheckBoxIcon />Search Engine Optimization </li>
+              <li><CheckBoxIcon />Monetization</li>
+              <li><CheckBoxIcon />Retargeting</li>
+            </ol>
+            <p>...</p>
+            <p>1137. <CheckBoxIcon />Growth Hacking</p>
+
+            <button>Get Started</button>
+          </div>
+        </div>
+        <div className={styles.boxes}>
+          <div className={styles.boxesChildren}>
+            <p>Strategy and Growth</p>
+            <p>We are a team of experienced strategists and marketers with a passion for growth. We specialize in helping companies identify and capitalize on opportunities for growth, with a focus on customer acquisition, retention, and loyalty. We’re kind of a big deal.</p>
+          </div>
+          <div className={styles.boxesChildren}>
+            <p>Architecture</p>
+            <p>Our goal is to maximize your growth potential and drive both short and long-term success. We bring to the table a wealth of knowledge in marketing, analytics, and technology, and a proven track record of helping companies achieve their desired goals.</p>
+          </div>
+          <div className={styles.boxesChildren}>
+            <p>New innovative solutions</p>
+            <p>We work closely with you to develop and execute strategies that best fit your company’s needs and objectives. You won't believe the sticky, stinky sh** we can do.</p>
+          </div>
+
+        </div>
+
+
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }
